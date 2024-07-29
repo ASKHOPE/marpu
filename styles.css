@@ -129,6 +129,12 @@ div.contact-details {
   margin: 5px 0;
 }
 
+div.about_us_text {
+    align-items: center;
+    text-align: center;
+    /* margin: 80%; */
+    padding: 5%;
+}
 .whatsapp-button {
   display: inline-block;
   padding: 10px 20px;
