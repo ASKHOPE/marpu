@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 button,
@@ -24,7 +27,7 @@ header {
   justify-content: center;
   align-items: center;
   /* padding: 20px; */
-  background-color: #f8f8f8;
+  background-color: aliceblue;
 }
 
 header .logo img {
@@ -135,6 +138,23 @@ div.about_us_text {
     /* margin: 80%; */
     padding: 5%;
 }
+
+div.legal_annual_reports_text{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+div.footer-content{
+display: inline-flex;
+}
+footer{
+  display: flex;
+  justify-content: center;
+background-color: aliceblue;
+margin: auto 0;
+
+}
+
+
 .whatsapp-button {
   display: inline-block;
   padding: 10px 20px;
