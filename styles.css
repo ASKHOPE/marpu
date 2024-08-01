@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@ a.button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /* margin: 4px 2px; */
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -26,7 +25,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 20px; */
   background-color: aliceblue;
 }
 
@@ -135,7 +133,6 @@ div.contact-details {
 div.about_us_text {
     align-items: center;
     text-align: center;
-    /* margin: 80%; */
     padding: 5%;
 }
 
@@ -153,7 +150,6 @@ background-color: aliceblue;
 margin: auto 0;
 
 }
-
 
 .whatsapp-button {
   display: inline-block;
@@ -196,5 +192,252 @@ margin: auto 0;
 
   .contact-image {
     grid-column: 1 / 2;
+  }
+} */
+
+
+/*******/
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+a.button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #333;
+  margin: 10px auto 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.contact-details {
+  grid-column: 1 / 2;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+div.about_us_text {
+  text-align: center;
+  padding: 5%;
+}
+
+div.legal_annual_reports_text {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.footer-content {
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  margin: auto 0;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #25d366;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.contact-image {
+  grid-column: 2 / 3;
+}
+
+.contact img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details,
+  .contact-image {
+    text-align: center;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contact-image {
+    grid-column: 1 / 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo img {
+    max-height: 40px;
   }
 }
