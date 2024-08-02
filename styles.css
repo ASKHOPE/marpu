@@ -318,8 +318,10 @@ nav ul li a {
 
 .contact-details {
   grid-column: 1 / 2;
-  text-align: left;
+  /* text-align: left; */
   font-size: 1.1em;
+  /* padding-left: 15%; */
+
 }
 
 .contact-details p {
@@ -329,6 +331,26 @@ nav ul li a {
 div.about_us_text {
   text-align: center;
   padding: 5%;
+  display: grid;
+  justify-items: center;
+    align-items: center;
+}
+
+div.about_us_text > h1{
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+div.about_us_text > p{
+  grid-row: 2;   
+  padding-left: 20%;
+    font-size: 15px;
+    padding-right: 10%;
+    padding-top: 5%; 
+}
+div.about_us_text > img{
+  grid-row: 2;
+  width: 30vw;
+  height: auto;
 }
 
 div.legal_annual_reports_text {
@@ -377,9 +399,10 @@ footer {
 }
 
 .contact img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  width: 60vw;
 }
 
 /* Tablet View */
@@ -437,7 +460,33 @@ footer {
     align-items: center;
   }
 
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.about_us_text > p {
+  padding: 0px;
+  }
+
+  div.about_us_text {
+    display: flex;
+    flex-direction: column;
+  }
+  div.about_us_text > img {
+  width: 60vw;
+}
+
   header .logo img {
     max-height: 40px;
+  }
+  
+}
+
+/* Mobile View */
+@media (min-width: 340px) {
+  ul{
+    display: flex;
+    flex-direction: row;
   }
 }
