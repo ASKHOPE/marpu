@@ -195,17 +195,20 @@ margin: auto 0;
   }
 } */
 
-
 /*******/
 /* Global Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@600&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@600&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-h1 , h2 , h3{
+h1,
+h2,
+h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
-p,li,a{
+p,
+li,
+a {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -332,44 +335,42 @@ nav ul li a {
   /* text-align: left; */
   font-size: 1.1em;
   /* padding-left: 15%; */
-
 }
 
 .contact-details p {
   margin: 5px 0;
 }
 
-section.goals-marpu{
-display: flex;
-    justify-content: center;
-  }
+section.goals-marpu {
+  display: flex;
+  justify-content: center;
+}
 
-  section.goals-marpu > div > img{
+section.goals-marpu > div > img {
   width: 90vw;
   height: auto;
-  }
-  
+}
 
 div.about_us_text {
   text-align: center;
   padding: 5%;
   display: grid;
   justify-items: center;
-    align-items: center;
+  align-items: center;
 }
 
-div.about_us_text > h1{
+div.about_us_text > h1 {
   grid-column: 1 / 3;
   grid-row: 1;
 }
-div.about_us_text > p{
-  grid-row: 2;   
-  padding-left: 20%;
-    font-size: 15px;
-    padding-right: 10%;
-    padding-top: 5%; 
+div.about_us_text > p {
+  grid-row: 2;
+  padding-left: 10%;
+  font-size: 15px;
+  padding-right: 10%;
+  padding-top: 5%;
 }
-div.about_us_text > img{
+div.about_us_text > img {
   grid-row: 2;
   width: 30vw;
   height: auto;
@@ -380,14 +381,10 @@ div.legal_annual_reports_text {
   padding-right: 10%;
 }
 
-
-/****************************************************************************/
-
 div.footer-content {
   display: block;
 }
 /****************************************************************************/
-
 
 footer {
   display: flex;
@@ -432,11 +429,7 @@ footer {
 
 /* Tablet View */
 @media (max-width: 1024px) {
-
-/****************************************************************************/
-
-  
-/****************************************************************************/
+  /****************************************************************************/
 
   .hero-text h1 {
     font-size: 2em;
@@ -491,13 +484,13 @@ footer {
     align-items: center;
   }
 
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
   }
 
   div.about_us_text > p {
-  padding: 0px;
+    padding: 0px;
   }
 
   div.about_us_text {
@@ -505,27 +498,24 @@ footer {
     flex-direction: column;
   }
   div.about_us_text > img {
-  width: 60vw;
-}
+    width: 60vw;
+  }
 
   header .logo img {
     max-height: 40px;
   }
-  
 }
 
 /* Mobile View */
 @media (min-width: 340px) {
-  ul{
+  ul {
     display: flex;
     flex-direction: row;
   }
 }
 
-
 @media (min-width: 1024px) {
-
-div.footer-content {
-  display: flex;
-}
+  div.footer-content {
+    display: flex;
+  }
 }
