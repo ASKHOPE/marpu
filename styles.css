@@ -339,6 +339,17 @@ nav ul li a {
   margin: 5px 0;
 }
 
+section.goals-marpu{
+display: flex;
+    justify-content: center;
+  }
+
+  section.goals-marpu > div > img{
+  width: 90vw;
+  height: auto;
+  }
+  
+
 div.about_us_text {
   text-align: center;
   padding: 5%;
